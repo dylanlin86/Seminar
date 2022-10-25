@@ -1,22 +1,3 @@
-package tw.group5.admin.service;
-
-import java.util.Map;
-
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.context.i18n.LocaleContextHolder;
-import org.springframework.stereotype.Service;
-import org.thymeleaf.context.Context;
-import org.thymeleaf.spring5.SpringTemplateEngine;
-
-@Service
-public class TemplateServices {
-
-    @Autowired
-    private SpringTemplateEngine templateEngine;
-    
-    public String render(String template, Map<String, ?> params) {
-        Context context = new Context(LocaleContextHolder.getLocale());
-        context.setVariables((Map<String, Object>) params);
-        return (templateEngine).process(template, context);
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:6082f2117821862726b573900e5aba064a8e07a88fe3c719e68184d095e65fb7
+size 696

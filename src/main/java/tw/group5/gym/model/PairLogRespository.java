@@ -1,12 +1,3 @@
-package tw.group5.gym.model;
-
-import org.springframework.data.jpa.repository.JpaRepository;
-import org.springframework.data.jpa.repository.Query;
-
-public interface PairLogRespository extends JpaRepository<PairLog, Integer> {
-
-	
-	@Query(value = "select * from pairlog where (mainPId=?1 and pairId=?2) or (mainPId=?2 and pairId=?1)", nativeQuery = true)
-	public PairLog checkForExists(int mainPdId, int pairPdId);
-	
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:3adcff4a9b77134194ac184c8f2954382109f32502a50e83558b176d875c8868
+size 416

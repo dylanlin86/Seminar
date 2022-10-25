@@ -1,25 +1,3 @@
-package tw.group5.admin.model;
-
-import java.util.List;
-import java.util.Optional;
-
-import org.springframework.data.jpa.repository.JpaRepository;
-import org.springframework.data.jpa.repository.Modifying;
-import org.springframework.transaction.annotation.Transactional;
-
-public interface AdminRepository extends JpaRepository<AdminBean, Integer> {
-
-	@Modifying
-	@Transactional
-//	@Query("delete from Admin where Admin.id in (?1)")
-	void deleteByIdIn(List<Integer> memberListInteger);
-	
-
-//	@Query("select * from Admin where admin_name =")
-//	public AdminBean findByAccountAndPassword(String adminName, String adminPwd);
-
-
-	public Optional<AdminBean> findByAccount(String adminName);
-	
-	
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:7c5e8c155ae5ba96e23b6ec484f4711486f500ed0ff5ae80e1d132335564535c
+size 687

@@ -1,11 +1,3 @@
-package tw.group5.activity.model;
-
-
-import java.util.Optional;
-
-import org.springframework.data.jpa.repository.JpaRepository;
-
-public interface ActivityVoucherRepository extends JpaRepository<ActivityVoucher, Integer> {
-	public Optional<ActivityVoucher> findByVoucherTitle(int voucherTitle);
-	public ActivityVoucher findByVoucherNo(String voucherNo);
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:0ca632538efd08929a159d23212ab82cb199d93cb648d10fe327a53a7b39c008
+size 353

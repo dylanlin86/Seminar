@@ -1,23 +1,3 @@
-package tw.group5.admin.service;
-
-import org.springframework.security.oauth2.client.userinfo.DefaultOAuth2UserService;
-import org.springframework.security.oauth2.client.userinfo.OAuth2UserRequest;
-import org.springframework.security.oauth2.core.OAuth2AuthenticationException;
-import org.springframework.security.oauth2.core.user.OAuth2User;
-import org.springframework.stereotype.Service;
-
-import tw.group5.admin.model.MemberOauth2User;
-
-@Service
-public class MemberOAuth2UserService extends DefaultOAuth2UserService{
-	
-
-	@Override
-	public OAuth2User loadUser(OAuth2UserRequest userRequest) throws OAuth2AuthenticationException {
-		OAuth2User user = super.loadUser(userRequest);
-		return new MemberOauth2User(user);
-	}
-	
-	
-
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:3bfbdea6798ef06438394dffb5a11f448d9d6e0a140c458332aabeeb7703676e
+size 725

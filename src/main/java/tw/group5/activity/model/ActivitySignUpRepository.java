@@ -1,17 +1,3 @@
-package tw.group5.activity.model;
-
-import java.util.List;
-import java.util.Set;
-
-import org.springframework.data.jpa.repository.JpaRepository;
-import org.springframework.data.jpa.repository.Query;
-
-public interface ActivitySignUpRepository extends JpaRepository<ActivitySignUp, Integer> {
-
-	public Set<ActivitySignUp> findByActivity(ActivityActivity activity);
-	
-	public List<ActivitySignUp> findByMemberId(int memberId);
-	
-	@Query(value= "SELECT COUNT(signupid) FROM signup WHERE activityid= ?1", nativeQuery=true)
-	public Integer countSignUpMember(Integer activityId);
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:ec7f3e9eb91fc38c6a6536adb608481e77577b1121fddeda36a3f36e0a490d44
+size 573

@@ -1,21 +1,3 @@
-package tw.group5.menu.model;
-
-import java.util.List;
-
-import org.springframework.data.jpa.repository.JpaRepository;
-import org.springframework.data.jpa.repository.Query;
-import org.springframework.data.repository.query.Param;
-
-public interface MenuRepository extends JpaRepository<Menubean, Integer> {
-	
-	public List<Menubean> findByExrAccount(String exrAccount);
-	
-	public List<Menubean> findBymenuTitle(String menuTitle);
-	
-	@Query(value = "SELECT DISTINCT menuset FROM menu where exrAccount = ?;",nativeQuery = true)
-	public List<String> Distinctmenu(String exrAccount);
-	
-	
-	
-
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:accc2b505a871a889a98d654c39cb8fdf0c6692a30f6be1441dc1439305008a8
+size 584

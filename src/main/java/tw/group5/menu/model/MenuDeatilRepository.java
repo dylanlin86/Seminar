@@ -1,17 +1,3 @@
-package tw.group5.menu.model;
-
-import java.util.List;
-
-import org.springframework.data.jpa.repository.JpaRepository;
-import org.springframework.data.jpa.repository.Query;
-
-public interface MenuDeatilRepository extends JpaRepository<MenuDetailbean, Integer> {
-	
-	@Query(value = "select * from menuDetail where setid =?;",nativeQuery = true)
-	public List<MenuDetailbean> findBySetid(Integer setid);
-	
-	
-
-	
-
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:a4cf94648cb9c9895406fd2f434bd5a26ccf874f40896648ff3874aa4bae01d8
+size 407

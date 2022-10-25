@@ -1,16 +1,3 @@
-package tw.group5.gym.model;
-
-import java.util.List;
-
-import org.springframework.data.jpa.repository.JpaRepository;
-import org.springframework.data.jpa.repository.Query;
-
-public interface GymRespository extends JpaRepository<GymBean, Integer> {
-	
-	public List<GymBean> findByGymName(String name);
-	
-	public List<GymBean> findByGymNameLikeAndGymAddressLike(String name, String address);
-	
-	@Query(value = "exec getgymrating @gymno=?1", nativeQuery = true)
-	public GymBean updateGymRating(int gymId);
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:a518c59e6767ec81307e0ae763829691926d0c84196b81f49ec6fc600e90cb7d
+size 501

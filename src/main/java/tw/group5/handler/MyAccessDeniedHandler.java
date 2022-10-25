@@ -1,29 +1,3 @@
-package tw.group5.handler;
-
-import java.io.IOException;
-
-import javax.servlet.ServletException;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
-
-import org.springframework.security.access.AccessDeniedException;
-import org.springframework.security.web.access.AccessDeniedHandler;
-import org.springframework.stereotype.Component;
-
-
-@Component
-public class MyAccessDeniedHandler implements AccessDeniedHandler {
-
-	@Override
-	public void handle(HttpServletRequest request, HttpServletResponse response,
-			AccessDeniedException accessDeniedException) throws IOException, ServletException {
-//		// 回應 403 狀態
-//		response.setStatus(HttpServletResponse.SC_FORBIDDEN);
-//		response.setCharacterEncoding("UTF-8");
-//		response.setContentType("text/html;charset=UTF-8");
-//		response.getWriter().write("權限不足！請聯絡管理員。");
-		response.sendRedirect("/group5/AccessDenied");
-		
-	}
-
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:31670cee2b0b3bcae9547b0424ac96ed20d085bcc8badcf466b81a640a3dd9d2
+size 944

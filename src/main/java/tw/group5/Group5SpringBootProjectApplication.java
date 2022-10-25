@@ -1,13 +1,3 @@
-package tw.group5;
-
-import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
-
-@SpringBootApplication
-public class Group5SpringBootProjectApplication {
-
-	public static void main(String[] args) {
-		SpringApplication.run(Group5SpringBootProjectApplication.class, args);
-	}
-
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:156ea1d33afb0b5549da6ba698439cefb8ceb8d7b41ef036ed313ce13a888f67
+size 336

@@ -1,12 +1,3 @@
-package tw.group5.admin.controller;
-
-import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
-
-@SpringBootApplication
-public class EmailappApplication {
-   public static void main(String[] args) {
-      SpringApplication.run(EmailappApplication.class, args);
-      
-   }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:1d5ec0874fdecab8b2517b21b281d124ec462cdb538ee30e6ae49520ba748dcf
+size 336

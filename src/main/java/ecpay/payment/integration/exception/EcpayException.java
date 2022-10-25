@@ -1,20 +1,3 @@
-package ecpay.payment.integration.exception;
-
-public class EcpayException extends Error{
-	private static final long serialVersionUID = 1L;
-	String NewExceptionMessage;
-	public EcpayException(String s){
-		this.NewExceptionMessage = s;
-	}
-	public String getNewExceptionMessage() {
-		return NewExceptionMessage;
-	}
-	public void setNewExceptionMessage(String newExceptionMessage) {
-		NewExceptionMessage = newExceptionMessage;
-	}
-	public void ShowExceptionMessage(){
-		
-		System.out.println("發生錯誤: " + getNewExceptionMessage());
-	}
-	
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:fec012156c39a9ea600529f6caba6247ac8dec09ce6de2d3ffb42ac3928a71f9
+size 540

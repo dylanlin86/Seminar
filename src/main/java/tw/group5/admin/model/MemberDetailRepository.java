@@ -1,11 +1,3 @@
-package tw.group5.admin.model;
-
-import java.util.Optional;
-import java.util.List;
-
-import org.springframework.data.jpa.repository.JpaRepository;
-
-public interface MemberDetailRepository extends JpaRepository<MemberDetail, Integer>{
-	public Optional<MemberDetail> findByReferralCode(String referralCode);
-	public List<MemberDetail> findByPairWilling(Integer pairWilling);
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:a4f0426f848572f7953b2bb0c61ef3a8b328ca3947fba475cb06512df8e32fbf
+size 373

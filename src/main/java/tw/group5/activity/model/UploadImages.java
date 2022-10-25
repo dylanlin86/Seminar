@@ -1,25 +1,3 @@
-package tw.group5.activity.model;
-
-public class UploadImages {
-	
-	private String uploaded;
-	
-	private String url;
-
-	public String getUploaded() {
-		return uploaded;
-	}
-
-	public void setUploaded(String uploaded) {
-		this.uploaded = uploaded;
-	}
-
-	public String getUrl() {
-		return url;
-	}
-
-	public void setUrl(String url) {
-		this.url = url;
-	}
-
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:0ca205815bf343f404ac1f5ae60c1fb24113d29682bab030273a901ceb0d619d
+size 347
